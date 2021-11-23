@@ -1,0 +1,62 @@
+.left{
+  text-align: center;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  background-color: #fff;
+  border:2px black dashed;
+}
+.left h3{
+  margin: 0.4rem;
+}
+.left.img{
+  margin: 0;
+  width:100%;
+}
+.playerInfo{
+  margin: 1rem 0.3rem 1rem;
+  padding: 1rem;
+}
+.playerInfo.card-body{
+  margin:1rem;
+  text-align: center;
+  background-color:#FF1493;
+}
+.mid{
+  text-align: center;
+  margin-left: 2rem;
+  margin-top: 5rem;
+}
+.mid.img{
+  width: 70%;
+  margin:0.3rem;
+}
+.site{
+  text-align: center;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  padding: 0;
+  background-color:#FFD700;
+  border:4px black dashed;
+}
+.middle{
+  margin-top: 5rem;
+}
+#Allname{
+  border-style: double;
+  border-width:10px;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  background-color:	Teal;
+  visibility:visible;
+}
+.down{
+  margin-top: 10rem;
+}
+.safe{
+  margin: 0;
+  padding: 4rem;
+  text-align: center;
+  background-color:#ADD8E6;
+  border:4px #fff dashed;
+}

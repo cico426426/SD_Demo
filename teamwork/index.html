@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>鬼抓人</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.left{
+  
+  height: 75%;
+  width: 200px;
+  position: absolute;
+  border:2px black dashed;
+  z-index: 0;
+  top: 100px;
+  left:200px;
+  text-align: center;
+  background-color:White;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.mid{
+  height: 75%;
+  width: 200px;
+  position: absolute;
+  z-index: 0;
+  top: 150px;
+  left:375px;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.Allname{
+  display:inline;
+  border-style: double;
+  border-width:10px;
+  padding:5px;
+  text-align: center;
+  height: 150px;
+  width: 400px;
+  position: absolute;
+  top: 300px;
+  left: 350px;
+  z-index: 3;
+  background-color:	Teal;
+  overflow-x: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  visibility:visible;
+}
+
+.site{
+ 
+  height: 800px;
+  width: 1100px;
+  position: relative;
+  display:inline-block;
+  border:5px black dashed;
+  z-index: 0;
+  top: 50px;
+  left: 550px;
+  background-color:#FFD700;
+  overflow-x: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.safe{
+  position:relative;
+  display:inline-block;
+  height: 150px;
+  width: 150px;
+  border:2px white dashed;
+  text-align: center;
+  background-color:#ADD8E6;
+  
+}
+.playerInfo {
+  height: 10%;
+  width: 70%;
+  top: 30px;
+  left:30px;
+  position: relative;
+  border-radius: 15px;
+  z-index: 0;
+  text-align: center;
+  background-color:#FF1493;
+  overflow-x: hidden;
+}
+</style>
+
+<script>
+var a=0;
+function playername(){
+	const name = document.getElementById("name_text").value;
+	if (a==0){
+		document.getElementById("player1").innerHTML = name;
+		document.getElementById("title_name").innerHTML =" Enter Player2's name";
+		document.getElementById("name_text").value ="";
+	}
+	else if(a==1){
+		document.getElementById("player2").innerHTML = name;
+		document.getElementById("title_name").innerHTML = " Enter Player3's name";
+		document.getElementById("name_text").value ="";
+	}
+	else {
+		document.getElementById("player3").innerHTML = name;
+		document.getElementById("Allname").style='visibility:hidden';
+	}
+	a++;
+}
+</script>
+
+</head>
+
+<body style="background-color:SeaGreen;">
+<div class="left card">
+<h3>Ghost Chasing</h3>
+<img src="left_ghost.png"  width="80%" height="20%">
+<br><br><br><br>
+
+<div class="playerInfo">
+<h4 id ="player1">Player1</h4>
+<h5>Count: 0</h5>
+</div>
+<br>
+<div class="playerInfo">
+<h4 id ="player2">Player2</h4>
+<h5>Count: 0</h5>
+</div>
+<br>
+<div class="playerInfo">
+<h4 id ="player3">Player3</h4>
+<h5>Count: 0</h5>
+</div>
+
+</div>
+
+<div class="mid">
+<img src="m1.png"  width="75px" height="75px"><br><br>
+<img src="m2.png"  width="75px" height="75px"><br><br>
+<img src="m3.png"  width="75px" height="75px"><br><br>
+<img src="m4.png"  width="75px" height="75px"><br><br>
+<img src="m5.png"  width="75px" height="75px">
+
+</div>
+
+<div class="site">
+
+<div class="Allname" id="Allname">
+<h3 id="title_name">Enter Player1's name</h3>
+<input type="text" id="name_text">
+<input type="button" value="OK" onclick="playername()">
+
+</div>
+
+
+
+<div class="safe">
+<br><br><h3>SAFE1</h3><br>
+</div>
+
+<div class="safe" style="left:785px;top:-30px">
+<br><br><h3>SAFE2</h3>
+</div>
+
+<div class="safe" style="left:-307px;top:610px;">
+<br><br><h3>SAFE3</h3>
+</div>
+
+<div class="safe" style="left:478px;top:610px;">
+<br><br><h3>SAFE4</h3>
+</div>
+
+</div>
+
+</body>
+
+</html>

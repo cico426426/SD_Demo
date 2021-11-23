@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>鬼抓人</title>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+</head>
+
+<body style="background-color:SeaGreen;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-2 left">
+                <h3>Ghost Chasing</h3>
+                <img src="left_ghost.png" class="img-fluid" alt="Responsive image">
+                <div class="playerInfo">
+                    <div class="card border-light" style="width: 12rem;">
+                        <div class="card-body playerInfo">
+                            <h4 class="card-title">Player1</h4>
+                            <p class="card-text">count: 0</p>
+                        </div>
+                    </div>
+                    <div class="card border-light" style="width: 12rem;">
+                        <div class="card-body playerInfo">
+                            <h4 class="card-title">Player2</h4>
+                            <p class="card-text">count: 0</p>
+                        </div>
+                    </div>
+                    <div class="card border-light" style="width: 12rem;">
+                        <div class="card-body playerInfo">
+                            <h4 class="card-title">Player3</h4>
+                            <p class="card-text">count: 0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-1 mid">
+                <img src="m1.png" class="img-fluid" alt="Responsive image">
+                <img src="m2.png" class="img-fluid" alt="Responsive image">
+                <img src="m3.png" class="img-fluid" alt="Responsive image">
+                <img src="m4.png" class="img-fluid" alt="Responsive image">
+                <img src="m5.png" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-12 col-md-8 site">
+                <div class="row top">
+                    <div class="col-12 col-md-3">
+                        <div class="safe">
+                            <h3>SAFE1</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6"></div>
+                    <div class="col-12 col-md-3">
+                        <div class="safe">
+                            <h3>SAFE2</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row middle">
+                    <div class="col-12 col-md-4"></div>
+                    <div class="col-12 col-md-4">
+                        <div class="allName" id="Allname">
+                            <h3 id="title_name">Enter Player1's name</h3>
+                            <input type="text" id="name_text">
+                            <input type="button" value="OK" onclick="playername()">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4"></div>
+                </div>
+                <div class="row down">
+                    <div class="col-12 col-md-3">
+                        <div class="safe">
+                            <h3>SAFE4</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6"></div>
+                    <div class="col-12 col-md-3">
+                        <div class="safe">
+                            <h3>SAFE3</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script>
+            var a = 0;
+            function playername() {
+                const name = document.getElementById("name_text").value;
+                if (a == 0) {
+                    document.getElementById("player1").innerHTML = name;
+                    document.getElementById("title_name").innerHTML = " Enter Player2's name";
+                    document.getElementById("name_text").value = "";
+                }
+                else if (a == 1) {
+                    document.getElementById("player2").innerHTML = name;
+                    document.getElementById("title_name").innerHTML = " Enter Player3's name";
+                    document.getElementById("name_text").value = "";
+                }
+                else {
+                    document.getElementById("player3").innerHTML = name;
+                    document.getElementById("Allname").style = 'visibility:hidden';
+                }
+                a++;
+            }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        /*選單*/
+        .header {
+            height: 50px;
+            background-color: #cccccc;
+            position: relative;
+        }
+
+        .logo {
+            width: 60px;
+            height: 40px;
+            margin-left: 10px;
+        }
+
+        .logo img {
+            vertical-align: block;
+        }
+
+        #menu_control {
+            position: absolute;
+            z-index: 2;
+            opacity: 0;
+        }
+
+        .menu_btn {
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+
+        .menu_btn span {
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+            display: block;
+            overflow: hidden;
+        }
+
+        .menu_btn::before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            left: 2px;
+            width: 36px;
+            background-color: #aaaaaa;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            box-shadow: 0px 8px 0px #aaa,
+                0px -8px 0px #aaa;
+        }
+
+        nav {
+            width: 80%;
+            height: calc(100vh - 50px);
+            background-color: #fcc;
+            position: absolute;
+            top: 50px;
+            left: -100%;
+            transition: .5s;
+        }
+
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: blueviolet;
+            padding: 10px 20px;
+            border-bottom: 1px solid #000;
+        }
+
+        #menu_control:checked~.header nav {
+            left: 0;
+        }
+        /*選單上*/
+        img {
+            vertical-align: bottom;
+        }
+
+        .banner img {
+            width: 100%;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #aaa;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .item-group {
+            width: 100%;
+            max-width: 1400px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .title {
+            margin: 0 10px 20px;
+            padding: 30px 10px;
+            background-color: #ccc;
+        }
+
+        .title h2 {
+            text-align: center;
+            font-size: 46px;
+        }
+
+        .title p {
+            text-align: 22px;
+            text-align: center;
+        }
+
+        .item {
+            margin: 0 10px 40px;
+        }
+
+        .item .text h3 {
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .item .pic img {
+            width: 100%;
+        }
+
+        .service .item {
+            margin: 60px 0;
+            background: #ffa;
+        }
+
+        @media screen and (min-width: 768px) {
+            /*選單*/
+            .menu_btn {
+                display: none;
+            }
+
+            .header {
+                display: flex;
+                justify-content: space-between;
+                background-color: #282923;
+                align-items: center;
+            }
+
+            nav {
+                position: relative;
+                display: flex;
+                left: 0;
+                width: auto;
+                height: auto;
+                top: 0;
+                background-color: transparent;
+            }
+
+            nav {
+                border-bottom: none;
+            }
+             /*選單上*/
+            .item-group {
+                display: flex;
+            }
+
+            .service .item {
+                display: flex;
+            }
+
+            .service .item .pic,
+            .service .item .text {
+                width: 50%;
+                margin: 0;
+            }
+
+            .service .item .text {
+                display: flex;
+                padding: 0 20px;
+                box-sizing: border-box;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <input type="checkbox" name="" id="menu_control">
+    <div class="header">
+        <h1 class="logo">
+            <a href="#">
+                <img src="https://picsum.photos/60/40?random=1">
+            </a>
+        </h1>
+        <label for="" class="menu_btn">
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </div>
+    
+    <div class="banner">
+        <img src="https://picsum.photos/1400/500?random=1">
+    </div>
+
+    <div class="about">
+        <div class="wrap">
+            <div class="title">
+                <h2>關於我們</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur distinctio libero vitae beatae!
+                    Deleniti enim nostrum consectetur, error ad ullam.
+                </p>
+            </div>
+            <div class="item-group">
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=11">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>遵守誘惑，特色相當帶來臨床新手不限另一個崗位表明暴力網頁班措施，
+                            驚人效率共享版對你以外顯然所屬，打印受傷對方事項和諧少女互動，
+                            就像靈魂破壞地理下降結婚職務美好誘惑其實西方代理，支持站點這位十年
+                            收購年度專欄結構最多獨特社會校長，本網五年，決定將來處罰不能接。
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=12">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>遵守誘惑，特色相當帶來臨床新手不限另一個崗位表明暴力網頁班措施，
+                            驚人效率共享版對你以外顯然所屬，打印受傷對方事項和諧少女互動，
+                            就像靈魂破壞地理下降結婚職務美好誘惑其實西方代理，支持站點這位十年
+                            收購年度專欄結構最多獨特社會校長，本網五年，決定將來處罰不能接。
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=13">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>遵守誘惑，特色相當帶來臨床新手不限另一個崗位表明暴力網頁班措施，
+                            驚人效率共享版對你以外顯然所屬，打印受傷對方事項和諧少女互動，
+                            就像靈魂破壞地理下降結婚職務美好誘惑其實西方代理，支持站點這位十年
+                            收購年度專欄結構最多獨特社會校長，本網五年，決定將來處罰不能接。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="service">
+        <div class="wrap">
+            <div class="item-group">
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=21">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>遵守誘惑，特色相當帶來臨床新手不限另一個崗位表明暴力網頁班措施，
+                            驚人效率共享版對你以外顯然所屬，打印受傷對方事項和諧少女互動，
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="wrap">
+            <div class="title">
+                <h2>關於我們</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur distinctio libero vitae beatae!
+                    Deleniti enim nostrum consectetur, error ad ullam.
+                </p>
+            </div>
+            <div class="item-group">
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=21">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>遵守誘惑，特色相當帶來臨床新手不限另一個崗位表明暴力網頁班措施，
+                            驚人效率共享版對你以外顯然所屬，打印受傷對方事項和諧少女互動，
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=22">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>遵守誘惑，特色相當帶來臨床新手不限另一個崗位表明暴力網頁班措施，
+                            驚人效率共享版對你以外顯然所屬，打印受傷對方事項和諧少女互動，
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=27">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>遵守誘惑，特色相當帶來臨床新手不限另一個崗位表明暴力網頁班措施，
+                            驚人效率共享版對你以外顯然所屬，打印受傷對方事項和諧少女互動，
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/300/200?random=23">
+                    </div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>遵守誘惑，特色相當帶來臨床新手不限另一個崗位表明暴力網頁班措施，
+                            驚人效率共享版對你以外顯然所屬，打印受傷對方事項和諧少女互動，
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; copyright 2019 by cico
+    </div>
+
+
+</body>
+
+</html>

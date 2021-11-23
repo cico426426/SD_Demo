@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>貓咪餵食器</title>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+</head>
+
+<body style="background-color:#000;">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-4 feedlist card">
+                <div class="interactive-button">
+                    <h2>Feed Me</h2>
+                    <h4>Choose one or all cats to feed.</h4>
+                    <!-- Material unchecked -->
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input feedCats" id="feedAngela" name="Angela">
+                        <label class="form-check-label" for="feedAngela">Angela</label>
+                    </div>
+
+                    <!-- Material checked -->
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input feedCats" id="feedBaby" name="Baby">
+                        <label class="form-check-label" for="feedBaby">Baby</label>
+                    </div>
+
+                    <!-- Material unchecked -->
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input feedCats" id="feedAmy" name="Amy">
+                        <label class="form-check-label" for="feedAmy">Amy</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input feedCats" id="feedDevil" name="Devil">
+                        <label class="form-check-label" for="feedBaby">Devil</label>
+                    </div>
+                    <!-- Material checked -->
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input feedCats" id="feedJohn" name="John">
+                        <label class="form-check-label" for="feedJohn">John</label>
+                    </div>
+
+                    <!-- Material checked -->
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="feedAll" name="all">
+                        <label class="form-check-label" for="feedAll">All cats</label>
+                    </div>
+
+                    <h2>Specific Breed?</h2>
+                    <!-- Search form -->
+                    <!-- Search form -->
+                    <input class="form-control" type="text" placeholder="Empty for all breed..." aria-label="Search">
+                    <button type="button" class="btn btn-primary btn-rounded" id="submit">submit</button>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-7 card cats">
+                <div class=" album-title">
+                    <h2>Cat Album</h2>
+                </div>
+                <div class="row  myCats">
+                    <div class="col-12 col-md-1 5"></div>
+                    <div class="col-12 col-md-3 myBorder">
+                        <img src="cat1.jpg" class="img-fluid cat" alt="Responsive image" id="Angela-img">
+                        <img src="feed.png" class="img-fluid feed" alt="Responsive image" id="feed1">
+                        <div class="rol clabel">
+                            <span class="badge badge-pill badge-default float-left">Angela</span>
+                            <span class="badge badge-pill badge-pink float-right">ragdoll</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 myBorder">
+                        <img src="cat2.jpg" class="img-fluid cat" alt="Responsive image" id="Baby-img">
+                        <img src="feed.png" class="img-fluid feed" alt="Responsive image" id="feed2">
+                        <div class="rol clabel">
+                            <span class="badge badge-pill badge-default float-left">Baby</span>
+                            <span class="badge badge-pill badge-pink float-right">ragdoll</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 myBorder">
+                        <img src="cat3.jpg" class="img-fluid cat" alt="Responsive image" id="Amy-img">
+                        <img src="feed.png" class="img-fluid feed" alt="Responsive image" id="feed3">
+                        <div class="rol clabel">
+                            <span class="badge badge-pill badge-default float-left">Amy</span>
+                            <span class="badge badge-pill badge-pink float-right">ring</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-1 5"></div>
+                    <div class="clearfix d-none d-sm-block"></div>
+                </div>
+                <div class="row  myCats2">
+                    <div class="col-12 col-md-3"></div>
+                    <div class="col-12 col-md-3 myBorder">
+                        <img src="cat4.jpg" class="img-fluid cat" alt="Responsive image" id="Devil-img">
+                        <img src="feed.png" class="img-fluid feed" alt="Responsive image" id="feed4">
+                        <div class="rol clabel">
+                            <span class="badge badge-pill badge-default float-left">Devil</span>
+                            <span class="badge badge-pill badge-pink float-right">tardar</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 myBorder">
+                        <img src="cat5.jpg" class="img-fluid cat" alt="Responsive image" id="John-img">
+                        <img src="feed.png" class="img-fluid feed" alt="Responsive image" id="feed5">
+                        <div class="rol clabel">
+                            <span class="badge badge-pill badge-default float-left">John</span>
+                            <span class="badge badge-pill badge-pink float-right">ragdoll</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3"></div>
+                    <div class="clearfix d-none d-sm-block"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".feed").hide();
+            $("#Angela-img").click(function () {
+                $("#Angela-img").attr("src", "cat1_inverse.jpg");
+            });
+            $("#Angela-img").mouseleave(function () {
+                $("#Angela-img").attr("src", "cat1.jpg");
+            });
+
+            $("#Baby-img").click(function () {
+                $("#Baby-img").attr("src", "cat2_inverse.jpg");
+            });
+            $("#Baby-img").mouseleave(function () {
+                $("#Baby-img").attr("src", "cat2.jpg");
+            });
+
+            $("#Amy-img").click(function () {
+                $("#Amy-img").attr("src", "cat3_inverse.jpg");
+            });
+            $("#Amy-img").mouseleave(function () {
+                $("#Amy-img").attr("src", "cat3.jpg");
+            });
+
+            $("#Devil-img").click(function () {
+                $("#Devil-img").attr("src", "cat4_inverse.jpg");
+            });
+            $("#Devil-img").mouseleave(function () {
+                $("#Devil-img").attr("src", "cat4.jpg");
+            });
+
+            $("#John-img").click(function () {
+                $("#John-img").attr("src", "cat5_inverse.jpg");
+            });
+            $("#John-img").mouseleave(function () {
+                $("#John-img").attr("src", "cat5.jpg");
+            });
+
+            $("#feedAll").change(function () {
+                $(".feedCats").prop("checked", $(this).prop("checked"))
+            });
+
+            $(".feedCats").change(function () {
+                if ($(this).prop("checked") == false) {
+                    $("#feedall").prop("checked", false)
+                }
+                if ($(".feedCats:checked").length == $(".feedCats").length) {
+                    $("#feedAll").prop("checked", true)
+                }
+                else {
+                    $("#feedAll").prop("checked", false)
+                }
+            });
+
+            $("#submit").click(function () {
+
+                if ($("#feedAngela").prop("checked")) {
+                    $("#feed1").show();
+                }
+                else {
+                    $("#feed1").hide();
+                }
+                if ($("#feedBaby").prop("checked")) {
+                    $("#feed2").show();
+                }
+                else {
+                    $("#feed2").hide();
+                }
+
+                if ($("#feedAmy").prop("checked")) {
+                    $("#feed3").show();
+                }
+                else {
+                    $("#feed3").hide();
+                }
+
+                if ($("#feedDevil").prop("checked")) {
+                    $("#feed4").show();
+                }
+                else {
+                    $("#feed4").hide();
+                }
+
+                if ($("#feedJohn").prop("checked")) {
+                    $("#feed5").show();
+                }
+                else {
+                    $("#feed5").hide();
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
