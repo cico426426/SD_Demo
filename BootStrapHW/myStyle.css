@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+.html, body{
+    height: 90%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif, 微軟正黑體;
+    color: #222;
+}
+
+.nav{
+    padding: .8rem;
+}
+.nav li{
+    padding-right: 20px;
+}
+
+.btn-secondary {
+    padding: 0.5rem;
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.nav-link{
+    color:#fff;
+    font-size: 1.1em !important;
+}
+.carousel-inner img{
+    margin-top: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.jumbotron {
+    padding: 1rem;
+    border-radius: 0;
+}
+
+.connect{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.comment{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.coment hr{
+    border-top: 2px solid #b4b4b4;
+    width:95%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+.padding{
+    padding-bottom: 2rem;
+}
+
+.social a{
+    font-size: 4.5rem;
+    padding: 3rem;
+}
+.fa-facebook{
+    color:#3b5998;
+}
+
+.fa-google-plus-g{
+    color: #dd4b39;
+}
+
+.fa-instgram{
+    color: #517fa4;
+}
+
+.fa-line{
+    color:#01B901;
+}
+.fa-facebook:hover,
+.fa-google-plus-g:hover,
+.fa-google-plus-g:hover,
+.fa-instgram:hover,
+.fa-line:hover{
+    color: #d5d5d5;
+}
+.movie a{
+    text-decoration:none;
+    color:#000;   
+}
+
+.main-footer {
+    padding: 10px 0;
+    background-color: #000;
+    color: #fff;
+}
+
